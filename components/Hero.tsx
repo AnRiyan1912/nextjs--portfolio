@@ -3,7 +3,7 @@ import { FaLocationArrow } from 'react-icons/fa6';
 import MagicButton from './MagicButton';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
-import profileImage from '../public/yellow-profile.png';
+import profileImage from '../public/nobg-profile.png';
 
 const Hero = () => {
   return (
@@ -43,6 +43,9 @@ const Hero = () => {
 
       <div className='flex justify-center relative my-20 z-10'>
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
+          <p className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
+            This My Website Portfolio
+          </p>
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            *
@@ -52,6 +55,7 @@ const Hero = () => {
             words='Transforming Concepts into Seamless User Experiences'
             className='text-center text-[40px] md:text-5xl lg:text-6xl'
           />
+
           {/* IMAGE CARD */}
           <div className='flex items-center flex-col text-gray-700 shadow-md bg-clip-border rounded-xl w-56 mt-8 mb-10 animate-fadeIn'>
             <div className='relative overflow-hidden text-gray-700 shadow-lg bg-clip-border rounded-xl h-48 border-2 border-purple-600 hover:scale-105 transition-transform duration-300 ease-in-out'>
@@ -70,7 +74,7 @@ const Hero = () => {
 
           <a href='#about'>
             <MagicButton
-              title='Show my work'
+              title='About me'
               icon={<FaLocationArrow />}
               position='right'
             />

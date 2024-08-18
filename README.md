@@ -56,7 +56,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/portfolio.git
+git clone https://github.com/Andrehajdin/portfolio.git
 cd portfolio
 ```
 
@@ -85,7 +85,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 export const navItems = [
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
-  { name: 'Testimonials', link: '#testimonials' },
+  { name: 'Educations', link: '#education' },
   { name: 'Contact', link: '#contact' },
 ];
 
@@ -133,7 +133,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: 'Currently building a JS Animation library',
+    title: 'Creates fire by integrating with payment systems',
     description: 'The Inside Scoop',
     className: 'md:col-span-3 md:row-span-2',
     imgClassName: 'absolute right-0 bottom-0 md:w-96 w-60',
@@ -160,7 +160,7 @@ export const projects = [
     des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
     img: '/p1.svg',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
-    link: 'https://github.com/adrianhajdin?tab=repositories',
+    link: 'https://github.com/Andrehajdin?tab=repositories',
   },
   {
     id: 2,
@@ -168,7 +168,7 @@ export const projects = [
     des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
     img: '/p2.svg',
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
-    link: 'https://github.com/adrianhajdin/zoom-clone',
+    link: 'https://github.com/Andrehajdin/zoom-clone',
   },
   {
     id: 3,
@@ -176,7 +176,7 @@ export const projects = [
     des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
     img: '/p3.svg',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
-    link: 'https://github.com/adrianhajdin/ai_saas_app',
+    link: 'https://github.com/Andrehajdin/ai_saas_app',
   },
   {
     id: 4,
@@ -184,38 +184,38 @@ export const projects = [
     des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
     img: '/p4.svg',
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
-    link: 'https://github.com/adrianhajdin/iphone',
+    link: 'https://github.com/Andrehajdin/iphone',
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Andre was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Andre's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Andre is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Andre was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Andre's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Andre is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Andre was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Andre's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Andre is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Andre was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Andre's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Andre is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Andre was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Andre's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Andre is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies',
   },

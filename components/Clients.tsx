@@ -4,48 +4,60 @@ import React from 'react';
 
 import { companies, educations } from '@/data';
 import { InfiniteMovingCards } from './ui/InfiniteCards';
+import { Button } from './ui/MovingBorders';
 
 const Clients = () => {
   return (
-    <section id='education' className='py-20'>
+    <div className='py-20 w-full' id='education'>
       <h1 className='heading'>
-        Education
-        <span className='text-purple'> </span>
+        Ed<span className='text-purple'>ucation</span>
       </h1>
 
-      <div className='flex flex-col items-center max-lg:mt-10'>
-        <div
-          // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
-          className='h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden'
-        >
-          <InfiniteMovingCards
-            items={educations}
-            direction='right'
-            speed='slow'
-          />
-        </div>
-
-        <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10'>
-          {companies.map((company) => (
-            <React.Fragment key={company.id}>
-              <div className='flex md:max-w-60 max-w-32 gap-2'>
+      <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
+        {educations.map((card) => (
+          <Button
+            key={card.name}
+            //   random duration will be fun , I think , may be not
+            duration={Math.floor(Math.random() * 10000) + 10000}
+            borderRadius='1.75rem'
+            style={{
+              //   add these two
+              //   you can generate the color from here https://cssgradient.io/
+              background: 'rgb(4,7,29)',
+              backgroundColor:
+                'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
+              // add this border radius to make it more rounded so that the moving border is more realistic
+              borderRadius: `calc(1.75rem* 0.96)`,
+            }}
+            // remove bg-white dark:bg-slate-900
+            className='flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800'
+          >
+            <div className='flex justify-between lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
+              <div className='bg-white rounded-sm'>
+                {' '}
                 <img
-                  src={company.img}
-                  alt={company.name}
-                  className='md:w-10 w-5'
-                />
-                <img
-                  src={company.nameImg}
-                  alt={company.name}
-                  width={company.id === 4 || company.id === 5 ? 100 : 150}
-                  className='md:w-24 w-20'
+                  src={card.image}
+                  alt={card.name}
+                  className='lg:w-24 md:w-20 w-16 '
                 />
               </div>
-            </React.Fragment>
-          ))}
-        </div>
+
+              <div className='lg:ms-5'>
+                <h1 className='text-start text-xl md:text-2xl font-bold'>
+                  {card.name}
+                </h1>
+                <p className='text-start text-white-100 mt-3 font-semibold'>
+                  {card.title}
+                </p>
+                <p className='text-start text-white-100 mt-3 font-semibold'>
+                  {card.quote}
+                </p>
+              </div>
+            </div>
+          </Button>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
